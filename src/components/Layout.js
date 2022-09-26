@@ -20,6 +20,7 @@ const Layout = ({ children }) => {
       <Navbar toggle={isToggle} />
       <Sidebar isOpen={isOpen} toggle={isToggle} />
       <main>{children}</main>
+      <Footer />
     </>
   )
 }
