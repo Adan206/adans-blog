@@ -1,0 +1,72 @@
+---
+title: Gatsby Tutorial
+slug: gatsby-tutorial
+image: ./images/gatsby-1.png
+date: 2022-09-27
+author: adan abbi
+category: gatsby
+readTime: 34
+---
+
+import { Link } from 'gatsby'
+import { FiInfo } from 'react-icons/fi'
+import { Counter, LikeButton, RegVideo, Video } from '../../components/Complete'
+
+# Hello, world!
+
+**I'm baby mlkshk lyft knausgaard hella, mukbang microdosing YOLO bruh echo park ascot hashtag.**
+Snackwave jean shorts readymade put a bird on it big mood single-origin coffee craft beer fixie
+lo-fi master cleanse taiyaki. Brooklyn fashion axe cronut occupy cliche.
+
+<div className="code">
+
+```js
+const myname = 'adan'
+const age = 85
+```
+
+</div>
+
+<div className="nice-text">
+
+### Nice Text
+
+<FiInfo className="nice-text-icon"></FiInfo>
+
+I'm baby prism everyday carry post-ironic jean shorts venmo health goth, migas pok pok vape beard umami. Poutine plaid before they sold out cronut messenger bag, echo park hexagon tumblr +1 quinoa mumblecore paleo. Activated charcoal drinking vinegar VHS gentrify put a bird on it tousled.
+
+</div>
+
+## React Components
+
+<Counter />
+
+```jsx
+import React from 'react'
+import styled from 'styled-components'
+import { AiOutlineLike } from 'react-icons/ai'
+const LikeButton = () => {
+  const [value, setValue] = React.useState(0)
+  return (
+    <Wrapper>
+      <div>
+        <button onClick={() => setValue(value + 1)}>
+          <AiOutlineLike />
+        </button>
+        <p>
+          Liked the post?
+          <br />
+          Click thumbs up few times
+        </p>
+      </div>
+      <span>+{value}</span>
+    </Wrapper>
+  )
+}
+```
+
+<LikeButton />
+
+<Link to="/posts" className="btn center-btn">
+  All posts
+</Link>
