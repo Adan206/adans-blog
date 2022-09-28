@@ -12,7 +12,7 @@ const components = {
   h4: Headings.myH4,
   inlineCode: Code,
   blockquote: Blockquote,
-  pre: PrismSetup,
+  // pre: PrismSetup,
 }
 export const wrapMDX = ({ element }) => {
   return <MDXProvider components={components}>{element}</MDXProvider>
