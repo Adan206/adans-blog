@@ -5,6 +5,7 @@ import {
   Blockquote,
   Code,
   PrismSetup,
+  Example,
 } from './src/components/Complete'
 
 const components = {
@@ -12,6 +13,7 @@ const components = {
   h4: Headings.myH4,
   inlineCode: Code,
   blockquote: Blockquote,
+  pre: Example,
   // pre: PrismSetup,
 }
 export const wrapMDX = ({ element }) => {
