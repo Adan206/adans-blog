@@ -20,6 +20,7 @@ const PostTemplate = ({ data }) => {
       <Wrapper>
         {/* post info */}
         <article>
+          <h2 className='text'>{title}</h2>
           <GatsbyImage
             image={getImage(image)}
             alt={title}
@@ -27,7 +28,6 @@ const PostTemplate = ({ data }) => {
           />
           <div className="post-info">
             <span>{category}</span>
-            <h2>{title}</h2>
             <p>{date}</p>
             <div className="underline"></div>
           </div>
@@ -51,11 +51,6 @@ export const query = graphql`
         date(formatString: "MMMM Do, YYYY")
         readTime
         slug
-        embeddedImages {
-          childImageSharp {
-            gatsbyImageData
-          }
-        }
         image {
           childImageSharp {
             gatsbyImageData
@@ -66,6 +61,12 @@ export const query = graphql`
     }
   }
 `
+
+//  embeddedImages {
+//           childImageSharp {
+//             gatsbyImageData
+//           }
+//         }
 
 const Wrapper = styled.section`
   width: 85vw;
@@ -87,6 +88,7 @@ const Wrapper = styled.section`
     h2 {
       margin: 1.25rem 0;
       font-weight: 400;
+      color: red;
     }
     p {
       color: var(--clr-grey-5);

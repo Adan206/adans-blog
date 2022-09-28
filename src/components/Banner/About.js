@@ -9,7 +9,7 @@ const About = () => {
     <Wrapper>
       <Title title="about me" />
       <StaticImage
-        src="../../assets/banner-about.jpeg"
+        src="../../assets/rsz_2author.jpg"
         layout="fixed"
         width={100}
         height={100}
@@ -17,7 +17,7 @@ const About = () => {
         className="img"
       />
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, eligendi.
+        From a web user to a web creator
       </p>
       <SocialLinks styleClass="banner-icons"></SocialLinks>
     </Wrapper>

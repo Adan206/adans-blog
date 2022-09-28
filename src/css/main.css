@@ -121,6 +121,13 @@ p {
     line-height: 1;
   }
 }
+
+.text{
+ text-align: center;
+ margin-top: -4rem;
+ margin-bottom: 2rem;
+ font-family: ariel
+}
 /*  global classes */
 
 .btn,
