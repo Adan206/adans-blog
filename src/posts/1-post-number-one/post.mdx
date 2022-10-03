@@ -10,11 +10,81 @@ readTime: 50
 
 import { Link } from 'gatsby'
 
+<section className="mdx-page">
+<h3 className='center'>What is TypeScript you ask?</h3>
 
-<h3>What is TypeScript you ask?</h3>
+<p>
+  In this article, I will be going over my journey with TypeScript from the
+  basics to my current skill using it in my everyday projects
+</p>
 
-TypeScript is a superset of JavaScript. With that being said, let’s raise a question. Do browsers understand TypeScript? I can answer this question by a big NO but I’d like to put it this way: Not yet! TypeScript compiles down to JavaScript, so that browsers and runtime environments like Node.js could execute it.
-TypeScript adds type checking feature to modern JavaScript language. It doesn’t mean that JavaScript knows nothing about types. JavaScript is a dynamically typed language which means you can assign a different type of data to a variable later in your code. It is resolved at the runtime. The typeof operator proves that JavaScript knows well about types. TypeScript on the other hand is statically typed. Type checking is resolved at the compile time. I think this is a cool feature because it lets you avoid many bugs during your development.
+** TypeScript is a subset of JavaScript, it is strongly typed programming language that
+builds on JavaScript at runtime. All Javascript is valid TypeScript but not the other
+way around. **
+
+#### 1. Type Annotations
+
+** When you declare variable using let and const, you can optionally add a type
+annotation to specify the type of the variable. The three most common usage are
+Number, String and Boolean. **
+
+```ts
+const myname = (name: string) => {
+  return `my name is ${name}`
+}
+```
+
+#### 2. Functions
+
+** You can also add a return type annotation to functions after the paramter **
+
+```ts
+function getFavoriteNumber(): number {
+  return 8
+}
+```
+
+3. Object Types
+
+4. Array Types
+
+5. Union Types
+
+6. Tuples and Enums
+
+#### 7. Interfaces
+
+** Interfaces serve almost the exact same purpose as type aliases, with slightly different syntax. We can use them
+to create reusable, modular types that describe the shapes objects. **
+
+```ts
+interface Person {
+  name: string
+  age: number
+}
+
+const sayHappyBirthday = (person: Person) => {
+  return `hey ${person.name}, congrats on turning ${person.age}`
+}
+```
+
+8. TypeScript Compiler
+
+9. DOM, Type Assertions
+
+10. Generics
+
+11. Type Narrowing
+
+12. Working With Type Declarations
+
+13. Modules
+
+14. Webpack & TypeScript
+
+15. React and TypeScript
+
+</section>
 
 <Link to="/posts" className="btn center-btn">
   all posts
