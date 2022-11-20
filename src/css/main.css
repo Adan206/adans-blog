@@ -636,6 +636,10 @@ as needed CSS classes
   margin-bottom: 2rem;
 }
 
+.logo {
+  font-size: 2rem;
+}
+
 /*
 ===============
 Footer
