@@ -9,7 +9,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import Sidebar from './Sidebar'
 import Footer from './Footer'
-import { Nav } from 'react-bootstrap'
+// import { Nav } from 'react-bootstrap'
 const Layout = ({ children }) => {
   const [isOpen, setIsOpen] = React.useState(false)
   const isToggle = () => {

@@ -1,0 +1,102 @@
+---
+title: Overcoming Coding Fatique
+slug: coding-block
+image: ./images/coding-fatique.jpg
+date: 2022-11-20
+author: adan abbi
+category: Obstacles
+readTime: 10
+---
+
+import { Link } from 'gatsby'
+
+<section className="mdx-page">
+<h3 className='center'>You just cant be bothered to code today, can you?</h3>
+
+<p>
+  Sometimes when you think you will be having a productive day in coding, it might turn out to be the 
+  the opposite. Thank fully I gathered some useful tips to tacke this problem!
+</p>
+
+** TypeScript is a subset of JavaScript, it is strongly typed programming language that
+builds on JavaScript at runtime. All Javascript is valid TypeScript but not the other
+way around. **
+
+#### 1. Type Annotations
+
+** When you declare variable using let and const, you can optionally add a type
+annotation to specify the type of the variable. The three most common usage are
+Number, String and Boolean. **
+
+```ts
+const myname = (name: string) => {
+  return `my name is ${name}`
+}
+```
+
+#### 2. Functions
+
+** You can also add a return type annotation to functions after the paramter **
+
+```ts
+function getFavoriteNumber(): number {
+  return 8
+}
+```
+
+#### capitalize first letter
+
+```js
+const names = ['pizza', 'soda', 'burger', 'fries', 'rice']
+
+for (let i = 0; i < names.length; i++) {
+  console.log(names[i][0].toUpperCase() + names[i].slice(1))
+}
+```
+
+3. Object Types
+
+4. Array Types
+
+5. Union Types
+
+6. Tuples and Enums
+
+#### 7. Interfaces
+
+** Interfaces serve almost the exact same purpose as type aliases, with slightly different syntax. We can use them
+to create reusable, modular types that describe the shapes objects. **
+
+```ts
+interface Person {
+  name: string
+  age: number
+}
+
+const sayHappyBirthday = (person: Person) => {
+  return `hey ${person.name}, congrats on turning ${person.age}`
+}
+```
+
+8. TypeScript Compiler
+
+9. DOM, Type Assertions
+
+10. Generics
+
+11. Type Narrowing
+
+12. Working With Type Declarations
+
+13. Modules
+
+14. Webpack & TypeScript
+
+15. React and TypeScript
+
+</section>
+
+<Link to="/posts" className="btn center-btn">
+  all posts
+</Link>
+````
